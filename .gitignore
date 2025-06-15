@@ -1,0 +1,8 @@
+/target
+.idea
+*.lock
+examples
+.vscode
+.helix
+.zed
+draft.md
