@@ -170,6 +170,13 @@
 //!
 //! assert_eq!(wrapped, "[CORE]");
 //! ```
+//! 
+//! `spipe!` helps you write cleaner, more expressive Rust pipelines by choosing
+//! the right transformation based on your intent:
+//! - Use `=>@`, `=>&`, `=>?` for functional types (Result, Option)
+//! - Use closures or substitutions for more flexible function calls
+//! - Insert debug logs or mutations inline
+//! - Reduce boilerplate and increase readability
 
 extern crate proc_macro;
 pub(crate) mod pipe;

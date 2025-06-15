@@ -1,7 +1,24 @@
 [package]
 name = "spipe"
 version = "0.1.0"
+authors = ["shitohana (kyudytskiy@gmail.com)"]
 edition = "2021"
+license-file = "LICENSE.md"
+readme = "README.md"
+repository = "https://github.com/shitohana/spipe"
+description = "Smart pipe macro for chaining function/method calls, with unwrap, map, and and_then support"
+categories = [
+    "rust-patterns",
+    "development-tools",
+    "value-formatting",
+    "data-structures"
+]
+keywords = [
+    "pipe",
+    "pipeline",
+    "macro",
+    "proc-macro",
+]
 
 [lib]
 proc-macro = true
@@ -10,7 +27,5 @@ name = "spipe"
 [dependencies]
 proc-macro2 = "1.0.95"
 quote = "1.0.40"
-syn = { version = "2.0.102", features = ["extra-traits"] }
+syn = { version = "2.0.102", features = ["extra-traits", "visit-mut", "full"] }
 
-[dev-dependencies]
-prettyplease = "0.2.33"
